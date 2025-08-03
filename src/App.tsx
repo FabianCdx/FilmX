@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { useState, useEffect } from 'react';
 import { useDebounce } from 'react-use';
 import Search from './components/Search';
@@ -63,12 +62,15 @@ const App = () => {
     <main>
       <div className="pattern"/>
       <div className="wrapper">
-      <header>
+      <header className='mt-0'>
+        <div className="relative h-16"> 
+          <div className="absolute inset-x-0 flex items-center justify-center">
+            <img src="./favicon.png" alt="Logo" className="w-16 h-16 mask-b-from-35% mask-t-from-35% mask-r-from-35% mask-l-from-35%" /></div>
+        </div>
         <img src="./hero-img.png" alt="herobanner"/>
-        <h1>Find <span className="text-gradient">Movies</span> You'll Enjoy without the Hassle</h1>
+        <h1>Entdecke <span className="text-gradient">deine Lieblingsfilme</span> in Sekunden.</h1>
         <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       </header>
-      <h1 className="text-white">{searchTerm}</h1>
       <section className="all-movies">
         <h2 className='mt-[40px]'>All Movies</h2>
         {isLoading ? (<Spinner/>) : errorMessage 

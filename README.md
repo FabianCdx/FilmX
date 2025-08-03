@@ -1,69 +1,58 @@
-# React + TypeScript + Vite
+# FilmX🎬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
 
-Currently, two official plugins are available:
+*A React-based movie search app.
+This application uses TMDB and the TMDB APIs but is not endorsed, certified, or otherwise approved by TMDB.*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*Eine React-basierte App zur Filmsuche.
+Diese Anwendung nutzt TMDB und die TMDB-APIs, wird jedoch nicht von TMDB unterstützt, zertifiziert oder anderweitig genehmigt.*
 
-## Expanding the ESLint configuration
+## 📌 Über das Projekt
+Dies ist eine **React-Webanwendung**, die Filme und Serien über die [TMDB API](https://www.themoviedb.org/documentation/api) durchsucht.  
+👉 **Funktionen**:
+- Suche nach Filmen/Serien
+- Anzeige von Details (Rating, Beschreibung, etc.)
+- Responsive Design
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🔹 **Hinweis**: Dieses Projekt entstand durch die Nachbildung eines YouTube-Tutorials (siehe [JSMastery](https://www.youtube.com/watch?v=dCLhUialKPQ&t=1034s)). Es dient mir als Lernprojekt und Portfolio-Beispiel.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠 Technologien
+- **Frontend**: React, TypeScript, Vite  
+- **Styling**: TailwindCSS
+- **API**: [The Movie Database (TMDB)](https://www.themoviedb.org/)  
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🗺 Roadmap (Coming Soon)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+I'm exploring these potential enhancements:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+  - Advanced filtering options
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+  - User watchlists
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+  - Performance optimizations
+
+  - Internationalization support
+
+(Dark Mode is currently under consideration pending UI refactoring)
+
+## 🤝 Contributing
+
+While this is primarily a portfolio project, I welcome constructive feedback. Please open an issue before submitting PRs.
+
+
+## 🚀 Installation
+1. API-Key von TMDB holen ([Anleitung](https://developers.themoviedb.org/3/getting-started/introduction))
+2. Repository klonen:
+  ```git bash
+  git clone https://github.com/FabianCdx/FilmX.git
+  ```
+3. Environment variable setzen
+  ```bash
+  VITE_TMDB_API_KEY=dein_api_key 
+  ```
+4. Starten
+```bash
+npm install
+npm run dev
 ```
