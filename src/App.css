@@ -1,0 +1,57 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {  
+  padding: 1.5em;
+  will-change: filterm, transform;
+  transition: filter 300ms ease, transform 2s ease; 
+  transform: rotate(0deg);
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  transform: rotate(360deg);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card-modern {
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.85); /* Leicht transparentes Weiß */
+  border-radius: 16px; /* Stark abgerundete Ecken */
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.1),             /* Weicher Basis-Schatten */
+    0 1px 3px rgba(0, 0, 0, 0.08);            /* Zarter Tiefen-Effekt */
+  border: 1px solid rgba(224, 224, 224, 0.5);  /* Subtiler Outline */
+  backdrop-filter: blur(8px);                   /* Moderner Glas-Effekt */
+  transition: all 0.3s ease;                   /* Sanfte Hover-Animation */
+
+  /* Optional: Hover-Effekt */
+  &:hover {
+    transform: translateY(-2px);               /* Leichter "Lift" */
+    box-shadow: 
+      0 6px 12px rgba(0, 0, 0, 0.15), 
+      0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+.card {  
+  border: 1px solid #4b5362;
+  padding: 20px;
+  margin: 10px;
+  background-color: #31363f;
+}
+
+.read-the-docs {
+  color: #888;
+}
