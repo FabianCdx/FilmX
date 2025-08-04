@@ -21,7 +21,7 @@ Dies ist eine **React-Webanwendung**, die Filme und Serien über die [TMDB API](
 - Anzeige von Details (Rating, Beschreibung, etc.)
 - Responsive Design
 
-🔹 **Hinweis**: Dieses Projekt entstand durch die Nachbildung eines YouTube-Tutorials (siehe [JSMastery](https://www.youtube.com/watch?v=dCLhUialKPQ&t=1034s)). Es dient mir als Lernprojekt und Portfolio-Beispiel.
+🔹 **Hinweis**: Dieses Projekt basiert auf (siehe [JSMastery](https://www.youtube.com/watch?v=dCLhUialKPQ&t=1034s)). Es dient als Lernprojekt und Portfolio-Beispiel.
 
 ## 🛠 Technologien
 - **Frontend**: React, TypeScript, Vite  
