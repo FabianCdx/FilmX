@@ -30,22 +30,17 @@ Dies ist eine **React-Webanwendung**, die Filme und Serien über die [TMDB API](
 
 ## 🗺 Roadmap (Coming Soon)
 
-I'm exploring these potential enhancements:
+Ich untersuche derzeit folgende mögliche Verbesserungen:
 
-  - Advanced filtering options
+  - Erweiterte Filteroptionen
 
-  - User watchlists
+  - Benutzer-Beobachtungslisten
 
-  - Performance optimizations
-
-  - Internationalization support
-
-(Dark Mode is currently under consideration pending UI refactoring)
+  - Leistungsoptimierungen
 
 ## 🤝 Contributing
 
-While this is primarily a portfolio project, I welcome constructive feedback. Please open an issue before submitting PRs.
-
+Obwohl es sich hierbei in erster Linie um ein Portfolio-Projekt handelt, freue ich mich über konstruktives Feedback.
 
 ## 🚀 Installation
 1. API-Key von TMDB holen ([Anleitung](https://developers.themoviedb.org/3/getting-started/introduction))
