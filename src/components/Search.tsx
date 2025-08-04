@@ -8,7 +8,7 @@ const Search = ({searchTerm, setSearchTerm} : SearchProps) => {
             <img src="./search.svg" alt="search"/>
             <input 
             type='text' 
-            placeholder='Search trough DB' 
+            placeholder='Welcher Film wird es heute sein?' 
             value={searchTerm} 
             onChange={(e) => setSearchTerm(e.target.value)} />
         </div>
