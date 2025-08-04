@@ -8,6 +8,12 @@ This application uses TMDB and the TMDB APIs but is not endorsed, certified, or 
 *Eine React-basierte App zur Filmsuche.
 Diese Anwendung nutzt TMDB und die TMDB-APIs, wird jedoch nicht von TMDB unterstützt, zertifiziert oder anderweitig genehmigt.*
 
+![FilmX - Preview](./public/preview.mp4)
+
+### 👁️👄👁️ Look
+
+[FilmX Demo](https://film-x-delta.vercel.app/)
+
 ## 📌 Über das Projekt
 Dies ist eine **React-Webanwendung**, die Filme und Serien über die [TMDB API](https://www.themoviedb.org/documentation/api) durchsucht.  
 👉 **Funktionen**:
