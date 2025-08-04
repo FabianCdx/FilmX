@@ -8,7 +8,7 @@ This application uses TMDB and the TMDB APIs but is not endorsed, certified, or 
 *Eine React-basierte App zur Filmsuche.
 Diese Anwendung nutzt TMDB und die TMDB-APIs, wird jedoch nicht von TMDB unterstützt, zertifiziert oder anderweitig genehmigt.*
 
-![FilmX - Preview](./public/preview.mp4)
+![Demo-Video](./public/preview.mp4)
 
 ### 👁️👄👁️ Look
 
