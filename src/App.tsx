@@ -4,6 +4,7 @@ import Search from './components/Search';
 import Spinner from './components/Spinner';
 import type { Movie } from './types';
 import MovieCard from './components/MovieCard';
+import { updateSearchCount } from './appwrite.ts';
 
 const API_BASE_URL = "https://api.themoviedb.org/3"
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
@@ -22,12 +23,13 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useState("");
 
-  useDebounce(() => setDebouncedSearchTerm(searchTerm), 500, [searchTerm])
+  useDebounce(() => setDebouncedSearchTerm(searchTerm), 750, [searchTerm])
 
   const fetchMovies = async(query = "") => {
     setIsLoading(true);
     setErrorMessage("");
     try {
+      let hasQuery = query ? true : false;
       const endpoint = query 
       ? `${API_BASE_URL}/search/movie?query=${encodeURIComponent(query)}`
       : `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
@@ -47,6 +49,9 @@ const App = () => {
       }
 
       setMovieList(data.results);
+      if(hasQuery) {
+        updateSearchCount(query, data.results[0]);
+      }
     } catch(error) {
       console.error(`Error while fetching Movies: ${error}`);
       setErrorMessage(`Error fetching movies. Please try again later.`);
