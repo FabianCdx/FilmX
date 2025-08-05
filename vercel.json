@@ -1,0 +1,9 @@
+{
+  "branches": {
+    "preview": false
+  },
+  "github": {
+    "enabled": true,
+    "silent": false
+  }
+}
