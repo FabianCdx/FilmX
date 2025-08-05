@@ -1,9 +1,11 @@
 {
-  "branches": {
-    "preview": false
-  },
-  "github": {
-    "enabled": true,
-    "silent": false
-  }
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+    "git": {
+        "deploymentEnabled": {
+            "feature*":false,
+            "bug*":false,
+            "fix*":false,
+            "refactor*":false
+        }
+    }
 }
